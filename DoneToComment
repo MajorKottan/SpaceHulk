@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.1
 // @description  done to comment
-// @author       Baneblade powered by tempschl
+// @author       MajorKottan powered by tempschl
 // @match        http://kali.ghoffice/pv-edit/edneu.pl*
 // @match        https://kali.geizhals.at/pv-edit/edneu.pl*
 // @grant        none
