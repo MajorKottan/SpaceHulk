@@ -1,0 +1,39 @@
+// ==UserScript==
+// @name         KbaToComment
+// @namespace    http://tampermonkey.net/
+// @version      2.1
+// @description  hack the planet!!!
+// @author       Baneblade powered by tempschl
+// @match        http://kali.ghoffice/pv-edit/edneu.pl*
+// @match        https://kali.ghoffice/pv-edit/edneu.pl*
+// @match        http://kali.geizhals.at/pv-edit/edneu.pl*
+// @match        https://kali.geizhals.at/pv-edit/edneu.pl*
+// @grant        none
+// @downloadURL	 none
+// @icon	 http://666kb.com/i/du9vkdssab91239qc.png
+// ==/UserScript==
+
+document.body.addEventListener('keyup', function(event) {
+    // F2
+    if (event.which !== 113) return;
+
+    var hinweisText = document.querySelector('#hinweis > textarea');
+    showTextareaIfHidden(hinweisText);
+    addOrPrependKbaText(hinweisText);
+});
+
+function showTextareaIfHidden(hinweisText) {
+    if(hinweisText.parentNode.style.display !== 'none') return;
+
+    toggle("hinweis", 1);
+}
+
+function addOrPrependKbaText(hinweisText) {
+    var oldContent = hinweisText.value;
+
+    hinweisText.value = 'kba';
+
+    if(!oldContent || oldContent === '') return;
+
+    hinweisText.value += '\n' + oldContent;
+}
