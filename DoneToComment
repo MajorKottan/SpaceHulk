@@ -2,9 +2,11 @@
 // @name         DoneToComment
 // @namespace    http://tampermonkey.net/
 // @version      1.1
-// @description  done to comment
-// @author       MajorKottan powered by tempschl
+// @description  hack the planet!!!
+// @author       Baneblade powered by tempschl
 // @match        http://kali.ghoffice/pv-edit/edneu.pl*
+// @match        https://kali.ghoffice/pv-edit/edneu.pl*
+// @match        http://kali.geizhals.at/pv-edit/edneu.pl*
 // @match        https://kali.geizhals.at/pv-edit/edneu.pl*
 // @grant        none
 // @downloadURL	 none
@@ -12,8 +14,8 @@
 // ==/UserScript==
 
 document.body.addEventListener('keyup', function(event) {
-    // F2 or GTFO
-    if (event.which !== 113) return;
+    // F4
+    if (event.which !== 115) return;
 
     var hinweisText = document.querySelector('#hinweis > textarea');
     showTextareaIfHidden(hinweisText);
