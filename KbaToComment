@@ -8,6 +8,8 @@
 // @match        https://kali.ghoffice/pv-edit/edneu.pl*
 // @match        http://kali.geizhals.at/pv-edit/edneu.pl*
 // @match        https://kali.geizhals.at/pv-edit/edneu.pl*
+// @match        http://opus.geizhals.at/pv-edit/edneu.pl*
+// @match        https://opus.geizhals.at/pv-edit/edneu.pl*
 // @grant        none
 // @downloadURL	 none
 // @icon	 http://666kb.com/i/du9vkdssab91239qc.png
